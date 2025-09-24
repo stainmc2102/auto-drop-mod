@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "autodrop",
+  "version": "1.0.0",
+  "name": "Auto Drop Mod",
+  "description": "Tự động drop toàn bộ item trong chest khi bấm nút",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.autodrop.AutoDrop"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.4",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "mixins": [
+    "autodrop.mixins.json"
+  ]
+}
